@@ -139,7 +139,7 @@
 }
 @utility scene-vignette {
   background:
-    radial-gradient(ellipse 85% 80% at 55% 45%, transparent 55%, #050711 100%),
+    radial-gradient(ellipse 90% 85% at 60% 40%, transparent 65%, rgb(5 7 17 / 0.85) 100%),
     linear-gradient(90deg, #050711 0%, transparent 8%, transparent 92%, #050711 100%);
 }
 @utility tv-rim {

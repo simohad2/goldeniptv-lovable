@@ -339,7 +339,7 @@ function Index() {
             })}
           </div>
         </div>
-        <div className="pointer-events-none absolute right-0 bottom-0 h-[320px] w-[62%] bg-[radial-gradient(ellipse_50%_45%_at_60%_70%,color-mix(in_oklab,var(--violet)_12%,transparent),transparent_100%)]" />
+        <div className="pointer-events-none absolute right-0 bottom-0 h-[320px] w-[62%]" style={{ background: "radial-gradient(ellipse 50% 45% at 60% 70%, color-mix(in oklab, var(--violet) 12%, transparent), transparent)" }} />
         <div
           className="pointer-events-none absolute right-0 bottom-0 h-[260px] w-[58%]"
           style={{ perspective: "1200px" }}

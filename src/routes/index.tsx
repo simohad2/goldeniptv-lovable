@@ -123,7 +123,7 @@ function TV() {
   return (
     <div className="relative" style={{ perspective: "2200px" }}>
       {/* environmental glow */}
-      <div className="pointer-events-none absolute -inset-x-10 -inset-y-12 rounded-[40%] bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--electric)_22%,transparent),color-mix(in_oklab,var(--violet)_10%,transparent)_45%,transparent_72%)] blur-2xl" />
+      <div className="pointer-events-none absolute -inset-x-10 -top-12 bottom-24 rounded-[40%] bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--electric)_22%,transparent),color-mix(in_oklab,var(--violet)_10%,transparent)_45%,transparent_72%)] blur-2xl" />
       <div
         className="relative rounded-[18px] border border-foreground/15 bg-gradient-to-b from-midnight-2 to-midnight p-[10px] tv-rim"
         style={{ transform: "rotateY(-7deg) rotateX(1deg)", transformOrigin: "left center" }}
@@ -339,7 +339,7 @@ function Index() {
             })}
           </div>
         </div>
-        <div className="pointer-events-none absolute right-0 bottom-0 h-[320px] w-[62%] bg-[radial-gradient(ellipse_at_60%_30%,color-mix(in_oklab,var(--violet)_12%,transparent),transparent_70%)]" />
+        <div className="pointer-events-none absolute right-0 bottom-0 h-[320px] w-[62%] bg-[radial-gradient(ellipse_50%_45%_at_60%_70%,color-mix(in_oklab,var(--violet)_12%,transparent),transparent_100%)]" />
         <div
           className="pointer-events-none absolute right-0 bottom-0 h-[260px] w-[58%]"
           style={{ perspective: "1200px" }}

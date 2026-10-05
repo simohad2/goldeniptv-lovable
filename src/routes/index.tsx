@@ -123,9 +123,9 @@ function TV() {
   return (
     <div className="relative" style={{ perspective: "2200px" }}>
       {/* environmental glow */}
-      <div className="pointer-events-none absolute -inset-16 rounded-full bg-violet/25 blur-[90px]" />
+      <div className="pointer-events-none absolute -inset-x-10 -top-12 bottom-24 rounded-[40%] bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--electric)_22%,transparent),color-mix(in_oklab,var(--violet)_10%,transparent)_45%,transparent_72%)] blur-2xl" />
       <div
-        className="relative rounded-[18px] border border-foreground/15 bg-gradient-to-b from-midnight-2 to-midnight p-[10px] shadow-[0_40px_80px_-20px_oklch(0_0_0/0.8),0_0_60px_-10px_var(--violet)]"
+        className="relative rounded-[18px] border border-foreground/15 bg-gradient-to-b from-midnight-2 to-midnight p-[10px] tv-rim"
         style={{ transform: "rotateY(-7deg) rotateX(1deg)", transformOrigin: "left center" }}
       >
         {/* screen */}
@@ -227,7 +227,10 @@ function TV() {
       <div className="relative mx-auto -mt-1 h-10 w-24 bg-gradient-to-b from-midnight-2 to-midnight" />
       <div className="relative mx-auto h-3 w-[46%] rounded-t-lg border-t border-foreground/15 bg-midnight-2 shadow-[0_10px_40px_-5px_var(--violet)]" />
       {/* desk */}
-      <div className="relative mx-auto h-6 w-[90%] rounded-[50%] bg-violet/15 blur-xl" />
+      <div className="pointer-events-none relative mx-auto -mt-3 h-24 w-[115%] -translate-x-[6%] desk-surface">
+        <div className="absolute top-1 left-1/2 h-4 w-[55%] -translate-x-1/2 rounded-[50%] bg-midnight blur-md" />
+        <div className="absolute top-0 left-1/2 h-10 w-[60%] -translate-x-1/2 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--electric)_14%,transparent),transparent)] blur-lg" />
+      </div>
     </div>
   );
 }
@@ -242,10 +245,10 @@ function LogoTile({ src }: { src: string }) {
 
 function Index() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-midnight font-sans text-foreground">
+    <main className="relative min-h-screen overflow-hidden scene-bg font-sans text-foreground">
       {/* atmosphere */}
-      <div className="pointer-events-none absolute top-0 right-0 h-[760px] w-[70%] bg-[radial-gradient(ellipse_at_60%_45%,color-mix(in_oklab,var(--violet)_22%,transparent),transparent_65%)]" />
-      <div className="pointer-events-none absolute top-0 left-0 h-[700px] w-[45%] bg-[radial-gradient(ellipse_at_20%_30%,color-mix(in_oklab,var(--electric)_10%,transparent),transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[900px] scene-beams" />
+      <div className="pointer-events-none absolute inset-0 scene-vignette" />
 
       <Header />
 
@@ -336,6 +339,7 @@ function Index() {
             })}
           </div>
         </div>
+        <div className="pointer-events-none absolute right-0 bottom-0 h-[320px] w-[62%]" style={{ background: "radial-gradient(ellipse 50% 45% at 60% 70%, color-mix(in oklab, var(--violet) 12%, transparent), transparent)" }} />
         <div
           className="pointer-events-none absolute right-0 bottom-0 h-[260px] w-[58%]"
           style={{ perspective: "1200px" }}

@@ -118,3 +118,43 @@
 }
 @utility bg-gradient-brand { background: var(--gradient-brand); }
 @utility shadow-glow { box-shadow: var(--glow-brand); }
+
+/* ---------- Cinematic environment ---------- */
+@utility scene-bg {
+  background:
+    radial-gradient(ellipse 55% 45% at 68% 38%, color-mix(in oklab, var(--electric) 26%, transparent), transparent 70%),
+    radial-gradient(ellipse 40% 38% at 52% 48%, color-mix(in oklab, var(--violet) 20%, transparent), transparent 72%),
+    radial-gradient(ellipse 30% 50% at 100% 30%, color-mix(in oklab, var(--electric) 14%, transparent), transparent 70%),
+    radial-gradient(ellipse 35% 40% at 12% 32%, color-mix(in oklab, var(--violet) 7%, transparent), transparent 75%),
+    radial-gradient(ellipse 60% 30% at 70% 78%, color-mix(in oklab, var(--violet) 10%, transparent), transparent 75%),
+    linear-gradient(180deg, #080b16 0%, #050711 45%, #080b16 70%, #050711 100%);
+}
+@utility scene-beams {
+  background:
+    linear-gradient(115deg, transparent 38%, color-mix(in oklab, var(--electric) 14%, transparent) 46%, transparent 54%),
+    linear-gradient(128deg, transparent 50%, color-mix(in oklab, var(--violet) 12%, transparent) 57%, transparent 64%),
+    linear-gradient(64deg, transparent 58%, color-mix(in oklab, var(--electric) 7%, transparent) 64%, transparent 70%);
+  filter: blur(18px);
+  mask-image: radial-gradient(ellipse 55% 60% at 66% 35%, black, transparent 80%);
+}
+@utility scene-vignette {
+  background:
+    radial-gradient(ellipse 90% 85% at 60% 40%, transparent 65%, rgb(5 7 17 / 0.85) 100%),
+    linear-gradient(90deg, #050711 0%, transparent 8%, transparent 92%, #050711 100%);
+}
+@utility tv-rim {
+  box-shadow:
+    inset 2px 0 0 color-mix(in oklab, var(--electric) 55%, transparent),
+    inset -2px 0 0 color-mix(in oklab, var(--violet) 55%, transparent),
+    inset 0 1px 0 oklch(1 0 0 / 0.14),
+    -18px 0 50px -24px var(--electric),
+    18px 0 50px -24px var(--violet),
+    0 50px 80px -30px oklch(0 0 0 / 0.9);
+}
+@utility desk-surface {
+  background:
+    radial-gradient(ellipse 45% 60% at 50% 0%, color-mix(in oklab, var(--electric) 22%, transparent), transparent 70%),
+    radial-gradient(ellipse 30% 50% at 72% 10%, color-mix(in oklab, var(--violet) 20%, transparent), transparent 70%),
+    radial-gradient(ellipse 50% 70% at 50% 10%, #12182a, transparent 75%);
+  mask-image: radial-gradient(ellipse 50% 90% at 50% 0%, black 30%, transparent 75%);
+}

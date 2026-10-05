@@ -227,7 +227,7 @@ function TV() {
       <div className="relative mx-auto -mt-1 h-10 w-24 bg-gradient-to-b from-midnight-2 to-midnight" />
       <div className="relative mx-auto h-3 w-[46%] rounded-t-lg border-t border-foreground/15 bg-midnight-2 shadow-[0_10px_40px_-5px_var(--violet)]" />
       {/* desk */}
-      <div className="relative -mx-20 h-6 bg-gradient-to-b from-midnight-2 via-violet/10 to-transparent" />
+      <div className="relative mx-auto h-6 w-[90%] rounded-[50%] bg-violet/15 blur-xl" />
     </div>
   );
 }
@@ -295,7 +295,7 @@ function Index() {
             })}
           </div>
         </div>
-        <div className="-mt-6 w-[66%] translate-x-4">
+        <div className="-mt-6 w-[66%] pr-12">
           <TV />
         </div>
       </section>

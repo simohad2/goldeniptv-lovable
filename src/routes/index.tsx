@@ -224,14 +224,14 @@ function TV() {
         <div className="mx-auto mt-[6px] h-[3px] w-24 rounded-full bg-electric/70 shadow-[0_0_12px_var(--electric)]" />
       </div>
       {/* stand */}
-      <div className="relative mx-auto -mt-1 h-10 w-24 bg-gradient-to-b from-midnight-2 to-midnight" />
+      <div className="relative mx-auto -mt-1 h-6 w-24 bg-gradient-to-b from-midnight-2 to-midnight" />
       <div className="relative z-10 mx-auto h-3 w-[46%] rounded-t-lg border-t border-foreground/20 bg-midnight-2" />
       {/* desk surface */}
-      <div className="pointer-events-none relative -mt-3 h-24">
-        <div className="absolute -top-6 -right-14 -left-[22%] h-40 desk-plane" />
+      <div className="pointer-events-none relative -mt-3 h-4">
+        <div className="absolute -top-3 -right-14 -left-[22%] h-20 desk-plane" />
         <div className="absolute top-3 -right-14 -left-[22%] h-px desk-edge" />
         {/* reflection of the display */}
-        <div className="absolute top-4 left-[8%] h-14 w-[84%] desk-reflection" />
+        <div className="absolute top-4 left-[8%] h-8 w-[84%] desk-reflection" />
         {/* contact shadow + highlight under base */}
         <div className="absolute top-2 left-1/2 h-5 w-[50%] -translate-x-1/2 rounded-[50%] bg-midnight blur-sm" />
         <div className="absolute top-[13px] left-1/2 h-[2px] w-[40%] -translate-x-1/2 desk-contact" />
@@ -257,23 +257,23 @@ function Index() {
 
       <Header />
 
-      <section className="relative z-10 mx-auto flex max-w-[1680px] items-start pt-16 pl-16">
-        <div className="w-[34%] shrink-0 pt-10 pr-4">
+      <section className="relative z-10 mx-auto flex max-w-[1680px] items-start pt-10 pl-16">
+        <div className="w-[34%] shrink-0 pt-8 pr-2">
           <p className="text-[15px] tracking-[0.3em] text-foreground/85">
             FOOTBALL • SPORTS • ENTERTAINMENT
           </p>
-          <h1 className="mt-5 text-[52px] leading-[1.05] font-bold tracking-tight">
+          <h1 className="mt-4 text-[54px] leading-[1.02] font-bold tracking-[-0.03em] whitespace-nowrap">
             Your Football.
             <br />
             Your Entertainment.
             <br />
             <span className="text-gradient-brand">One Subscription.</span>
           </h1>
-          <p className="mt-6 max-w-[460px] text-[19px] leading-[1.45] text-muted-foreground">
+          <p className="mt-5 max-w-[460px] text-[19px] leading-[1.45] text-muted-foreground">
             Follow major football leagues and competitions, plus movies, series and live
             entertainment in one Golden IPTV experience.
           </p>
-          <div className="mt-8 flex gap-5">
+          <div className="mt-7 flex gap-5">
             <a
               href="#"
               className="flex items-center gap-3 rounded-xl bg-gradient-brand px-7 py-4 text-[17px] font-semibold shadow-glow"
@@ -287,7 +287,7 @@ function Index() {
               Explore Plans
             </a>
           </div>
-          <div className="mt-8 flex gap-7 text-[13px] text-foreground/85">
+          <div className="mt-6 flex gap-7 text-[13px] text-foreground/85">
             {[
               [Clock, "24-hour free trial"],
               [CalendarDays, "Multiple plan periods"],
@@ -303,13 +303,13 @@ function Index() {
             })}
           </div>
         </div>
-        <div className="-mt-6 min-w-0 flex-1 pr-14">
+        <div className="-mt-10 min-w-0 flex-1 pr-14">
           <TV />
         </div>
       </section>
 
       {/* catalogue */}
-      <section className="relative z-10 mx-auto -mt-2 flex max-w-[1680px] items-end pb-10 pl-16">
+      <section className="relative z-10 mx-auto mt-4 flex max-w-[1680px] items-end pb-10 pl-16">
         <div className="relative z-10 w-[55%] shrink-0">
           <p className="text-[14px] tracking-[0.3em] text-foreground/85">
             ENTERTAINMENT FOR EVERYONE

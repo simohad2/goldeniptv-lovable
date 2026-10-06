@@ -229,12 +229,12 @@ function TV() {
       {/* desk surface */}
       <div className="pointer-events-none relative -mt-3 h-24">
         <div className="absolute -top-6 -right-14 -left-[22%] h-40 desk-plane" />
-        <div className="absolute top-0 -right-14 -left-[22%] h-px desk-edge" />
+        <div className="absolute top-3 -right-14 -left-[22%] h-px desk-edge" />
         {/* reflection of the display */}
-        <div className="absolute top-1 left-[8%] h-14 w-[84%] desk-reflection" />
+        <div className="absolute top-4 left-[8%] h-14 w-[84%] desk-reflection" />
         {/* contact shadow + highlight under base */}
-        <div className="absolute top-0 left-1/2 h-5 w-[50%] -translate-x-1/2 rounded-[50%] bg-midnight blur-sm" />
-        <div className="absolute top-[2px] left-1/2 h-[2px] w-[40%] -translate-x-1/2 desk-contact" />
+        <div className="absolute top-2 left-1/2 h-5 w-[50%] -translate-x-1/2 rounded-[50%] bg-midnight blur-sm" />
+        <div className="absolute top-[13px] left-1/2 h-[2px] w-[40%] -translate-x-1/2 desk-contact" />
       </div>
     </div>
   );

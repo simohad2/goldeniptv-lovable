@@ -158,3 +158,23 @@
     radial-gradient(ellipse 50% 70% at 50% 10%, #12182a, transparent 75%);
   mask-image: radial-gradient(ellipse 50% 90% at 50% 0%, black 30%, transparent 75%);
 }
+@utility desk-plane {
+  background:
+    radial-gradient(ellipse 30% 55% at 82% 22%, color-mix(in oklab, var(--electric) 26%, transparent), transparent 75%),
+    radial-gradient(ellipse 32% 50% at 38% 22%, color-mix(in oklab, var(--violet) 22%, transparent), transparent 75%),
+    linear-gradient(180deg, transparent 0%, #141b30 16%, #0d1222 32%, #080b16 55%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 14%, black 90%, transparent 100%);
+}
+@utility desk-edge {
+  background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--violet) 55%, transparent) 35%, oklch(1 0 0 / 0.18) 55%, color-mix(in oklab, var(--electric) 65%, transparent) 80%, transparent);
+}
+@utility desk-reflection {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--electric) 18%, transparent), color-mix(in oklab, var(--violet) 8%, transparent) 40%, transparent);
+  filter: blur(10px);
+  mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+}
+@utility desk-contact {
+  background: linear-gradient(90deg, transparent, var(--electric), var(--violet), transparent);
+  filter: blur(2px);
+  opacity: 0.8;
+}

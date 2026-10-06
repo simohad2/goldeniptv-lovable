@@ -225,11 +225,16 @@ function TV() {
       </div>
       {/* stand */}
       <div className="relative mx-auto -mt-1 h-10 w-24 bg-gradient-to-b from-midnight-2 to-midnight" />
-      <div className="relative mx-auto h-3 w-[46%] rounded-t-lg border-t border-foreground/15 bg-midnight-2 shadow-[0_10px_40px_-5px_var(--violet)]" />
-      {/* desk */}
-      <div className="pointer-events-none relative mx-auto -mt-3 h-24 w-[115%] -translate-x-[6%] desk-surface">
-        <div className="absolute top-1 left-1/2 h-4 w-[55%] -translate-x-1/2 rounded-[50%] bg-midnight blur-md" />
-        <div className="absolute top-0 left-1/2 h-10 w-[60%] -translate-x-1/2 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--electric)_14%,transparent),transparent)] blur-lg" />
+      <div className="relative z-10 mx-auto h-3 w-[46%] rounded-t-lg border-t border-foreground/20 bg-midnight-2" />
+      {/* desk surface */}
+      <div className="pointer-events-none relative -mt-3 h-24">
+        <div className="absolute -top-6 -right-14 -left-[22%] h-40 desk-plane" />
+        <div className="absolute top-3 -right-14 -left-[22%] h-px desk-edge" />
+        {/* reflection of the display */}
+        <div className="absolute top-4 left-[8%] h-14 w-[84%] desk-reflection" />
+        {/* contact shadow + highlight under base */}
+        <div className="absolute top-2 left-1/2 h-5 w-[50%] -translate-x-1/2 rounded-[50%] bg-midnight blur-sm" />
+        <div className="absolute top-[13px] left-1/2 h-[2px] w-[40%] -translate-x-1/2 desk-contact" />
       </div>
     </div>
   );

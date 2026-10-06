@@ -303,7 +303,7 @@ function Index() {
             })}
           </div>
         </div>
-        <div className="-mt-10 min-w-0 flex-1 pr-14">
+        <div className="-mt-4 min-w-0 flex-1 pr-14">
           <TV />
         </div>
       </section>

@@ -262,7 +262,7 @@ function Index() {
           <p className="text-[15px] tracking-[0.3em] text-foreground/85">
             FOOTBALL • SPORTS • ENTERTAINMENT
           </p>
-          <h1 className="mt-4 text-[54px] leading-[1.02] font-bold tracking-[-0.03em] whitespace-nowrap">
+          <h1 className="mt-4 text-[clamp(26px,2.9vw,52px)] leading-[1.04] font-bold tracking-[-0.03em] whitespace-nowrap">
             Your Football.
             <br />
             Your Entertainment.

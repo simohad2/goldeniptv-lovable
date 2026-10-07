@@ -78,7 +78,7 @@ function Logo({ small = false }: { small?: boolean }) {
         className={`${small ? "size-6" : "size-9"} fill-violet text-electric`}
         strokeWidth={1.5}
       />
-      <span className={`${small ? "text-lg" : "text-2xl"} font-bold tracking-tight`}>
+      <span className={`${small ? "text-lg" : "text-2xl"} font-bold tracking-tight whitespace-nowrap`}>
         Golden IPTV
       </span>
     </div>
@@ -87,7 +87,7 @@ function Logo({ small = false }: { small?: boolean }) {
 
 function Header() {
   return (
-    <header className="relative z-20 mx-auto flex max-w-[1680px] items-center justify-between px-16 pt-5">
+    <header className="relative z-20 mx-auto flex max-w-[1680px] items-center justify-between px-[clamp(24px,3.8vw,64px)] pt-5">
       <Logo />
       <nav className="flex items-center gap-2 text-[15px]">
         {NAV.map((n, i) => (
@@ -257,9 +257,9 @@ function Index() {
 
       <Header />
 
-      <section className="relative z-10 mx-auto flex max-w-[1680px] items-start pt-10 pl-16">
+      <section className="relative z-10 mx-auto flex max-w-[1680px] items-start pt-10 pl-[clamp(24px,3.8vw,64px)]">
         <div className="w-[34%] shrink-0 pt-8 pr-2">
-          <p className="text-[15px] tracking-[0.3em] whitespace-nowrap text-foreground/85">
+          <p className="text-[clamp(11px,0.95vw,15px)] tracking-[clamp(0.12em,1.4vw,0.3em)] whitespace-nowrap text-foreground/85">
             FOOTBALL • SPORTS • ENTERTAINMENT
           </p>
           <h1 className="mt-4 text-[clamp(26px,2.9vw,52px)] leading-[1.04] font-bold tracking-[-0.03em] whitespace-nowrap">
@@ -269,25 +269,25 @@ function Index() {
             <br />
             <span className="text-gradient-brand">One Subscription.</span>
           </h1>
-          <p className="mt-5 max-w-[460px] text-[19px] leading-[1.45] text-muted-foreground">
+          <p className="mt-5 max-w-[460px] text-[clamp(15px,1.15vw,19px)] leading-[1.45] text-muted-foreground">
             Follow major football leagues and competitions, plus movies, series and live
             entertainment in one Golden IPTV experience.
           </p>
-          <div className="mt-7 flex gap-5">
+          <div className="mt-7 flex gap-[clamp(10px,1.2vw,20px)]">
             <a
               href="#"
-              className="flex items-center gap-3 whitespace-nowrap rounded-xl bg-gradient-brand px-7 py-4 text-[17px] font-semibold shadow-glow"
+              className="flex items-center gap-3 whitespace-nowrap rounded-xl bg-gradient-brand px-[clamp(16px,1.8vw,28px)] py-[clamp(10px,1vw,16px)] text-[clamp(13px,1.05vw,17px)] font-semibold shadow-glow"
             >
               Start 24-Hour Free Trial <ArrowRight className="size-5" />
             </a>
             <a
               href="#"
-              className="flex items-center whitespace-nowrap rounded-xl border border-electric/70 px-11 py-4 text-[17px] font-semibold transition-colors hover:bg-electric/10"
+              className="flex items-center whitespace-nowrap rounded-xl border border-electric/70 px-[clamp(18px,2.4vw,44px)] py-[clamp(10px,1vw,16px)] text-[clamp(13px,1.05vw,17px)] font-semibold transition-colors hover:bg-electric/10"
             >
               Explore Plans
             </a>
           </div>
-          <div className="mt-6 flex gap-7 text-[13px] whitespace-nowrap text-foreground/85">
+          <div className="mt-6 flex gap-[clamp(10px,1.6vw,28px)] text-[clamp(11px,0.85vw,13px)] whitespace-nowrap text-foreground/85">
             {[
               [Clock, "24-hour free trial"],
               [CalendarDays, "Multiple plan periods"],
@@ -296,14 +296,14 @@ function Index() {
               const Icon = I as typeof Clock;
               return (
                 <span key={t as string} className="flex items-center gap-2">
-                  <Icon className="size-6 text-violet" strokeWidth={1.5} />
+                  <Icon className="size-[clamp(16px,1.5vw,24px)] text-violet" strokeWidth={1.5} />
                   {t as string}
                 </span>
               );
             })}
           </div>
         </div>
-        <div className="-mt-4 min-w-0 flex-1 pr-14">
+        <div className="-mt-4 min-w-0 flex-1 pr-[clamp(24px,3.5vw,56px)]">
           <TV />
         </div>
       </section>

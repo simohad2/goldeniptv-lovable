@@ -257,8 +257,8 @@ function Index() {
 
       <Header />
 
-      <section className="relative z-10 mx-auto flex max-w-[1680px] items-start pt-10 pl-[clamp(24px,3.8vw,64px)]">
-        <div className="w-[34%] shrink-0 pt-8 pr-2">
+      <section className="relative z-10 mx-auto flex max-w-[1680px] flex-col items-start gap-10 pt-10 pl-[clamp(24px,3.8vw,64px)] min-[1150px]:flex-row min-[1150px]:gap-0">
+        <div className="w-full shrink-0 pt-8 pr-6 min-[1150px]:w-[34%] min-[1150px]:pr-2">
           <p className="text-[clamp(11px,0.95vw,15px)] tracking-[clamp(0.12em,1.4vw,0.3em)] whitespace-nowrap text-foreground/85">
             FOOTBALL • SPORTS • ENTERTAINMENT
           </p>
@@ -303,14 +303,14 @@ function Index() {
             })}
           </div>
         </div>
-        <div className="-mt-4 min-w-0 flex-1 pr-[clamp(24px,3.5vw,56px)]">
+        <div className="-mt-4 w-full min-w-0 flex-1 pr-[clamp(24px,3.5vw,56px)]">
           <TV />
         </div>
       </section>
 
       {/* catalogue */}
-      <section className="relative z-10 mx-auto mt-4 flex max-w-[1680px] items-end pb-10 pl-16">
-        <div className="relative z-10 w-[55%] shrink-0">
+      <section className="relative z-10 mx-auto mt-4 flex max-w-[1680px] items-end pb-10 pl-[clamp(24px,3.8vw,64px)]">
+        <div className="relative z-10 w-[55%] shrink-0 max-[1150px]:w-full max-[1150px]:pr-6">
           <p className="text-[14px] tracking-[0.3em] text-foreground/85">
             ENTERTAINMENT FOR EVERYONE
           </p>

@@ -107,7 +107,7 @@ function Header() {
       <div className="flex items-center gap-8">
         <a
           href="#"
-          className="flex items-center gap-2 rounded-lg bg-gradient-brand px-5 py-2.5 text-sm font-semibold shadow-glow"
+          className="flex items-center gap-2 whitespace-nowrap rounded-lg bg-gradient-brand px-5 py-2.5 text-sm font-semibold shadow-glow"
         >
           Start 24-Hour Free Trial <ArrowRight className="size-4" />
         </a>
@@ -259,7 +259,7 @@ function Index() {
 
       <section className="relative z-10 mx-auto flex max-w-[1680px] items-start pt-10 pl-16">
         <div className="w-[34%] shrink-0 pt-8 pr-2">
-          <p className="text-[15px] tracking-[0.3em] text-foreground/85">
+          <p className="text-[15px] tracking-[0.3em] whitespace-nowrap text-foreground/85">
             FOOTBALL • SPORTS • ENTERTAINMENT
           </p>
           <h1 className="mt-4 text-[clamp(26px,2.9vw,52px)] leading-[1.04] font-bold tracking-[-0.03em] whitespace-nowrap">
@@ -276,18 +276,18 @@ function Index() {
           <div className="mt-7 flex gap-5">
             <a
               href="#"
-              className="flex items-center gap-3 rounded-xl bg-gradient-brand px-7 py-4 text-[17px] font-semibold shadow-glow"
+              className="flex items-center gap-3 whitespace-nowrap rounded-xl bg-gradient-brand px-7 py-4 text-[17px] font-semibold shadow-glow"
             >
               Start 24-Hour Free Trial <ArrowRight className="size-5" />
             </a>
             <a
               href="#"
-              className="flex items-center rounded-xl border border-electric/70 px-11 py-4 text-[17px] font-semibold transition-colors hover:bg-electric/10"
+              className="flex items-center whitespace-nowrap rounded-xl border border-electric/70 px-11 py-4 text-[17px] font-semibold transition-colors hover:bg-electric/10"
             >
               Explore Plans
             </a>
           </div>
-          <div className="mt-6 flex gap-7 text-[13px] text-foreground/85">
+          <div className="mt-6 flex gap-7 text-[13px] whitespace-nowrap text-foreground/85">
             {[
               [Clock, "24-hour free trial"],
               [CalendarDays, "Multiple plan periods"],
